@@ -7,5 +7,7 @@ cumprimentar("Maria") // retornará "Olá, Maria!"
 */
 
 function cumprimentar(text) {
-  return `Olá, ${text}!`;
+  let texto = prompt("Digite um texto para completar a frase 'Olá...!' ");
+  return `Olá, ` + text + "!";
 }
+console.log(cumprimentar);

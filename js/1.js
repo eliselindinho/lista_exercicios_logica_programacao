@@ -12,6 +12,10 @@ function doisParametros(repetiraNumero, quantidadeRepeticao) {
   let quantidadeRepeticao = prompt(
     "Quantas vezes o número digitado anteriormente repetirá?"
   );
-  return [repetiraNumero * quantidadeRepeticao];
+  let array = [];
+  for (let i = 0; i < quantidadeRepeticao; i++);
+  array.push(repetiraNumero);
+  return Array;
 }
-console.log(repetiraNumero, quantidadeRepeticao);
+
+console.log(doisParametros);
