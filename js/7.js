@@ -6,10 +6,11 @@ simboloMais(2) // retornará "++"
 simboloMais(4) // retornará "++++"
 */
 
-function simboloMais(qtd) {
+function simboloMais(quantidade) {
   let listaDeMais = [];
-  for (i = 0; i < qtd; i++) {
+  for (i = 0; i < quantidade; i++) {
     listaDeMais.push("+");
   }
-  return listaDeMais.join("");
+  return listaDeMais.join(" ");
 }
+console.log(simboloMais(10));

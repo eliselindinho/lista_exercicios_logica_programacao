@@ -9,11 +9,12 @@ calcularMedia([0, 10]) // retornará 5
 calcularMedia([1, 2, 3, 4, 5]) // retornará 3
 */
 
-function calcularMedia(arr) {
+function calcularMedia(numeros) {
   let somaDeNumeros = 0;
-  for (var i = 0; i < arr.length; i++) {
-    numeroAtual = arr[i];
+  for (var i = 0; i < numeros.length; i++) {
+    let numeroAtual = numeros[i];
     somaDeNumeros += numeroAtual;
   }
-  return somaDeNumeros / arr.length;
+  return somaDeNumeros / numeros.length;
 }
+console.log(calcularMedia([50, 10, 20, 100, 80]));

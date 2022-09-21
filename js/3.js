@@ -24,5 +24,8 @@ function receberNomeDoMes(mes) {
     "Dezembro",
   ];
   return mesesDoAno[mes - 1];
-  console.log("Digite um número de 1 a 12. O mês escolhido é " + mesesDoAno);
 }
+
+console.log(
+  "Digite um número de 1 a 12. O mês escolhido é " + receberNomeDoMes(4) + "."
+);

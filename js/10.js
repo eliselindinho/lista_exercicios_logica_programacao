@@ -6,6 +6,8 @@ Exemplo:
 converterIdadeEmAnosParaDias(25) // retornará 9125
 converterIdadeEmAnosParaDias(70) // retornará 25550
 */
-function converterIdadeEmAnosParaDias(idade) {
-  return idade * 365;
+function converterIdadeEmAnosParaDias(idadeEmDias) {
+  let diasDoAno = 365;
+  return diasDoAno * idadeEmDias;
 }
+console.log(converterIdadeEmAnosParaDias(25));

@@ -15,12 +15,20 @@ despesasTotais([
 ]) // retornará “O total de despesas é: R$ 34599.89”
 */
 
-function despesasTotais(arrDeObjetos) {
-  //console.log(arrDeObjetos[1]["preco"]);
+function despesasTotais(produtos) {
   let totalDasDespesas = 0;
-  for (var i = 0; i < arrDeObjetos.length; i++) {
-    valorAtualDasDespesas = arrDeObjetos[i]["preco"];
+  for (var i = 0; i < produtos.length; i++) {
+    let valorAtualDasDespesas = produtos[i]["preco"];
     totalDasDespesas += valorAtualDasDespesas;
   }
   return totalDasDespesas;
 }
+console.log(
+  "Valor das despesas totais é R$" +
+    despesasTotais([
+      { nome: "Jeep", categoria: "Automóvel", preco: 350000 },
+      { nome: "Pacote Disney", categoria: "Viagem", preco: 50000 },
+      { nome: "Casa", categoria: "imóvel", preco: 500000 },
+    ]) +
+    "."
+);

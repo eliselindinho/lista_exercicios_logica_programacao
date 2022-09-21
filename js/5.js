@@ -19,22 +19,20 @@ function media(arrNotas) {
 }
 
 function receberMelhorEstudante(objetoEstudantes) {
-  //calcular as medias dos estudantes
-  let arrEstudantes = []; //array de estudandes vazio
+  let arrEstudantes = [];
   Object.entries(objetoEstudantes).forEach(function (estudante) {
-    //Object.entries transforma em arrays os pares chave: valor de um objeto
-    let objetoEstudante = {}; //novo Objeto de estudante
-    objetoEstudante.nome = estudante[0]; //separando o nome do estudante
-    objetoEstudante.media = media(estudante[1]); //separando as notas e enviando para uma funcao de media que fará o calculo
-    arrEstudantes.push(objEstudante); // adicionando o novo objeto no array
+    let objetoEstudante = {};
+    objetoEstudante.nome = estudante[0];
+    objetoEstudante.media = media(estudante[1]);
+    arrEstudantes.push(objEstudante);
   });
-  return arrEstudantes.sort((a, b) => b.media - a.media)[0]; // invertendo a posição para buscar a maior media
+  return arrEstudantes.sort((a, b) => b.media - a.media)[0];
 }
 
 console.log(
   receberMelhorEstudante({
-    Joao: [8, 7.6, 8.9, 6], // média 7.625
-    Mariana: [9, 6.6, 7.9, 8], // média 7.875
-    Carla: [7, 7, 8, 9], // média 7.75
+    Joao: [8, 7.6, 8.9, 6],
+    Mariana: [9, 6.6, 7.9, 8],
+    Carla: [7, 7, 8, 9],
   })
 );

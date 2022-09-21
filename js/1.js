@@ -8,14 +8,12 @@ repetir(7, 3) // retornará [7, 7, 7]
 */
 
 function doisParametros(repetiraNumero, quantidadeRepeticao) {
-  let repetiraNumero = prompt("Digite um número");
-  let quantidadeRepeticao = prompt(
-    "Quantas vezes o número digitado anteriormente repetirá?"
-  );
-  let array = [];
-  for (let i = 0; i < quantidadeRepeticao; i++);
-  array.push(repetiraNumero);
-  return Array;
+  let lista = [];
+  for (i = 0; i < quantidadeRepeticao; i++) {
+    lista.push(repetiraNumero);
+  }
+
+  return lista;
 }
 
-console.log(doisParametros);
+console.log(doisParametros(8, 3));

@@ -7,8 +7,8 @@ calcularSalario(150, 40.5) // retornará "Salário igual a R$ 6075"
 */
 
 function salarioFuncionario(quantidadeHoras, valorDaHora) {
-  prompt("Qual a quantidade de horas trabalhadas?");
-  prompt("Qual o valor da hora trabalhada");
   let salario = quantidadeHoras * valorDaHora;
   return "Salário igual a R$ " + salario;
 }
+
+console.log(salarioFuncionario(176, 12));
